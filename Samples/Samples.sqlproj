@@ -235,10 +235,14 @@
     <None Include="Tasks\2.Grouping,Aggregation\2.4.Subqueries\2.4.1.sql" />
     <None Include="Tasks\2.Grouping,Aggregation\2.4.Subqueries\2.4.2.sql" />
     <None Include="Tasks\2.Grouping,Aggregation\2.4.Subqueries\2.4.3.sql" />
-    <None Include="Tasks\3.Deploy\1.1 CreditCards.table.sql" />
+    <None Include="Tasks\3.Deploy\CreditCards.table.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+    <None Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+    <PostDeploy Include="Tasks\3.Deploy\Script.PostDeployment.sql" />
+    <None Include="Tasks\3.Deploy\Insert.Categories.sql" />
+    <None Include="Tasks\3.Deploy\Insert.Suppliers.sql" />
+    <None Include="Tasks\3.Deploy\Insert.Products.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Samples\Subqueries\SubqueriesInWHERE.sql" />
